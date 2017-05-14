@@ -1,5 +1,5 @@
 import {Component, Input} from '@angular/core';
-import {Student} from '../student';
+import {Student} from '../product';
 import {Course} from '../course';
 
 
