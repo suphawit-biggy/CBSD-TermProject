@@ -17,23 +17,13 @@ export class ProductsComponent {
 
   ngOnInit() {
     this.productDataService.getProductsData()
-      .subscribe(products => this.products = products,
-        (error : Error ) => {
-          if (error.message === 'UnAuthorize'){
-            this.router.navigate(['login'],{queryParams:{source:'product'}});
-          }
-        });
+      .subscribe(products => this.products = products)
   }
 
 
   onSearch(){
     this.productDataService.findProduct(this.search)
-      .subscribe(products => this.products = products,
-        (error : Error ) => {
-          if (error.message === 'UnAuthorize'){
-            this.router.navigate(['login'],{queryParams:{source:'product'}});
-          }
-        });
+      .subscribe(products => this.products = products)
   }
 
   showDetail(product: Product){

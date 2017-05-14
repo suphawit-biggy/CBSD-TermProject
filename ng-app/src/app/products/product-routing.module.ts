@@ -19,5 +19,5 @@ const productRoutes: Routes = [
     RouterModule
   ]
 })
-export class StudentRoutingModule {
+export class ProductRoutingModule {
 }

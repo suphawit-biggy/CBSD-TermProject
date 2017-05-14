@@ -11,8 +11,6 @@ export class ProductsDataService {
     let productArray: Product[];
     return this.http.get('app/data/people.json')
       .map(res => res.json().products);
-
-
   }
 
   getProduct(id: number) {

@@ -1,8 +1,6 @@
 package camt.cbsd.config;
 
-import camt.cbsd.dao.CourseDao;
 import camt.cbsd.dao.ProductDao;
-import camt.cbsd.entity.Course;
 import camt.cbsd.entity.Product;
 import camt.cbsd.entity.security.Authority;
 import camt.cbsd.entity.security.AuthorityName;
@@ -32,13 +30,6 @@ public class DataLoader implements ApplicationRunner {
     @Autowired
     public void setProductDao(ProductDao productDao) {
         this.productDao = productDao;
-    }
-
-    CourseDao courseDao;
-
-    @Autowired
-    public void setCourseDao(CourseDao courseDao) {
-        this.courseDao = courseDao;
     }
 
     String baseUrl;
@@ -90,24 +81,9 @@ public class DataLoader implements ApplicationRunner {
                 .rate(2.2)
                 .price(14324).build();
 
-        Course course1 = Course.builder().courseId("953331").courseName("CBSD").build();
-        Course course2 = Course.builder().courseId("953323").courseName("Software Construction").build();
-        Course course3 = Course.builder().courseId("953499").courseName("Software Project").build();
-
-        courseDao.add(course1);
-        courseDao.add(course2);
-        courseDao.add(course3);
-
         productDao.addProduct(product1);
         productDao.addProduct(product2);
         productDao.addProduct(product3);
-
-        product1.addCourse(course1);
-        product1.addCourse(course2);
-        product2.addCourse(course2);
-        product2.addCourse(course3);
-        product3.addCourse(course1);
-        product3.addCourse(course3);
 
         securitySetup();
         product1.setUser(user1);

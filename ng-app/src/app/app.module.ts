@@ -13,7 +13,7 @@ import {SelectModule} from 'ng2-select';
 import {ProductsComponent} from './products/list/products.component';
 import {ProductsAddComponent} from './products/add/products.add.component';
 import {ProductsViewComponent} from './products/view/products.view.component';
-import {StudentRoutingModule} from './products/product-routing.module';
+import {ProductRoutingModule} from './products/product-routing.module';
 import {ProductsDataService} from './service/products-data.service';
 import {ProductsDataServerService} from './service/products-data-server.service';
 import {PurchaseHistoryComponent} from './purchase-history/purchase-history.component';
@@ -35,7 +35,7 @@ import {UsersDataServerService} from './service/users-data-server.service';
     UserAddComponent
   ],
   imports: [BrowserModule, FormsModule, HttpModule,
-    StudentRoutingModule, AppRoutingModule, SelectModule],
+    ProductRoutingModule, AppRoutingModule, SelectModule],
   bootstrap: [AppComponent],
   providers: [{provide: ProductsDataService, useClass: ProductsDataServerService},
     {provide: UsersDataService, useClass: UsersDataServerService},

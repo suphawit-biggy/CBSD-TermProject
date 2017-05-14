@@ -2,6 +2,7 @@ import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import {Router} from '@angular/router';
 import {Product} from '../../products/product';
 import {UsersDataService} from '../../service/users-data.service';
+import {User} from '../user';
 
 @Component({
   selector: 'app-user-add',
@@ -16,14 +17,11 @@ export class UserAddComponent implements OnInit {
     this.user.role = value.text;
   }
 
-
-  product: any = {};
-
   constructor(private usersDataService: UsersDataService, private router: Router) {
   };
 
   ngOnInit() {
-    this.product = new Product();
+    this.user = new User();
   }
 
   @ViewChild('fileInput') inputEl: ElementRef;
