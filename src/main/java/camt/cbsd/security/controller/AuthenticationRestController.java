@@ -1,12 +1,12 @@
 package camt.cbsd.security.controller;
 
 import camt.cbsd.config.json.View;
-import camt.cbsd.entity.Student;
+import camt.cbsd.entity.Product;
 import camt.cbsd.security.JwtAuthenticationRequest;
 import camt.cbsd.security.JwtTokenUtil;
 import camt.cbsd.security.JwtUser;
 import camt.cbsd.security.service.JwtAuthenticationResponse;
-import camt.cbsd.services.StudentService;
+import camt.cbsd.services.ProductService;
 import com.fasterxml.jackson.annotation.JsonView;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -22,7 +22,6 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.ws.rs.GET;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -42,7 +41,7 @@ public class AuthenticationRestController {
     private UserDetailsService userDetailsService;
 
     @Autowired
-    private StudentService studentService;
+    private ProductService productService;
 
     @JsonView(View.Login.class)
     @PostMapping("${jwt.route.authentication.path}")
@@ -60,12 +59,12 @@ public class AuthenticationRestController {
         // Reload password post-security so we can generate token
         final UserDetails userDetails = userDetailsService.loadUserByUsername(authenticationRequest.getUsername());
         final String token = jwtTokenUtil.generateToken(userDetails, device);
-        Student student = studentService.getStudentForTransfer(authenticationRequest.getUsername());
+        Product product = productService.getProductForTransfer(authenticationRequest.getUsername());
         // Return the token
 //        return ResponseEntity.ok(new JwtAuthenticationResponse(token));
         Map result = new HashMap();
         result.put("token",token);
-        result.put("student",student);
+        result.put("product",product);
         return  ResponseEntity.ok(result);
     }
 

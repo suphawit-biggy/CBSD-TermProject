@@ -1,14 +1,14 @@
 package camt.cbsd.dao;
 
-import camt.cbsd.entity.Student;
+import camt.cbsd.entity.Product;
 
 import java.util.List;
 
 /**
  * Created by Dto on 3/15/2017.
  */
-public abstract class AbstractStudentDao implements StudentDao {
-    List<Student> students;
+public abstract class AbstractProductDao implements ProductDao {
+    List<Product> products;
     String baseUrl;
     String imageUrl;
 
@@ -23,27 +23,27 @@ public abstract class AbstractStudentDao implements StudentDao {
     String imageBaseUrl;
 
     @Override
-    public List<Student> getStudents() {
-        return students;
+    public List<Product> getProducts() {
+        return products;
     }
 
     @Override
-    public Student findById(long id) {
+    public Product findById(long id) {
 
-        return students.stream().filter(s -> s.getId() == id).findFirst().orElse(null);
+        return products.stream().filter(s -> s.getId() == id).findFirst().orElse(null);
     }
 
     @Override
     public Integer size() {
-        return students.size();
+        return products.size();
     }
 
     @Override
-    public Student addStudent(Student student){
+    public Product addProduct(Product product){
         //update id
         int newId = this.size()+1;
-        student.setId(newId);
-        students.add(student);
-        return student;
+        product.setId(newId);
+        products.add(product);
+        return product;
     }
 }

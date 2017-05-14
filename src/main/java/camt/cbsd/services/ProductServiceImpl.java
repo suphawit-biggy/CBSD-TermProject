@@ -1,8 +1,8 @@
 package camt.cbsd.services;
 
-import camt.cbsd.dao.StudentDao;
+import camt.cbsd.dao.ProductDao;
+import camt.cbsd.entity.Product;
 import camt.cbsd.entity.RegisterEntity;
-import camt.cbsd.entity.Student;
 import camt.cbsd.entity.security.Authority;
 import camt.cbsd.entity.security.AuthorityName;
 import camt.cbsd.entity.security.User;
@@ -13,9 +13,9 @@ import org.hibernate.Hibernate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.imageio.ImageIO;
-import javax.transaction.Transactional;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
@@ -27,13 +27,11 @@ import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 
-
-
 @Service
 @ConfigurationProperties(prefix = "server")
-public class StudentServiceImpl implements StudentService {
+public class ProductServiceImpl implements ProductService {
     @Autowired
-    StudentDao studentDao;
+    ProductDao productDao;
 
 
     String imageServerDir;
@@ -43,54 +41,54 @@ public class StudentServiceImpl implements StudentService {
     }
 
     @Transactional
-    public List<Student> getStudents(){
-        List<Student> students = studentDao.getStudents();
-        for(Student student:students){
-            Hibernate.initialize(student.getEnrolledCourse());
+    public List<Product> getProducts(){
+        List<Product> products = productDao.getProducts();
+        for(Product product:products){
+            Hibernate.initialize(product.getEnrolledCourse());
         }
-        return students;
+        return products;
     }
 
     @Override
     @Transactional
-    public Student findById(long id) {
-        Student student = studentDao.findById(id);
-        Hibernate.initialize(student.getEnrolledCourse());
-        return student;
+    public Product findById(long id) {
+        Product product = productDao.findById(id);
+        Hibernate.initialize(product.getEnrolledCourse());
+        return product;
     }
 
     @Override
-    public Student addStudent(Student student) {
-        return studentDao.addStudent(student);
+    public Product addProduct(Product product) {
+        return productDao.addProduct(product);
     }
 
     @Transactional
     @Override
-    public Student getStudentForTransfer(String username) {
-        Student student = studentDao.findByUsername(username);
-        Hibernate.initialize(student.getUser());
-        Hibernate.initialize(student.getAuthorities());
-        return student;
+    public Product getProductForTransfer(String username) {
+        Product product = productDao.findByUsername(username);
+        Hibernate.initialize(product.getUser());
+        Hibernate.initialize(product.getAuthorities());
+        return product;
     }
 
     @Override
-    public Student addStudent(Student student, String imageFileName, BufferedImage image) throws IOException {
+    public Product addProduct(Product product, String imageFileName, BufferedImage image) throws IOException {
         // save file to the server
-        int newId = studentDao.size()+1;
+        int newId = productDao.size()+1;
         String newFilename = newId +"."+ imageFileName;
         File targetFile = Files.createFile(Paths.get(imageServerDir+newFilename)).toFile();
-        ImageIO.write(image,FilenameUtils.getExtension(imageFileName),targetFile);
+        ImageIO.write(image, FilenameUtils.getExtension(imageFileName),targetFile);
 
-        student.setImage(newFilename);
-        studentDao.addStudent(student);
-        return student;
+        product.setImage(newFilename);
+        productDao.addProduct(product);
+        return product;
     }
 
     @Override
-    public List<Student> queryStudent(String query) {
+    public List<Product> queryProduct(String query) {
         if (query == null || query.equals(""))
-            return studentDao.getStudents();
-        return studentDao.getStudents(query);
+            return productDao.getProducts();
+        return productDao.getProducts(query);
     }
 
     @Autowired
@@ -101,34 +99,33 @@ public class StudentServiceImpl implements StudentService {
 
     @Transactional
     @Override
-    public Student addStudent(RegisterEntity registerEntity) {
+    public Product addProduct(RegisterEntity registerEntity) {
         Authority authority;
         if (registerEntity.getRole().equals("Admin")){
-            authority =
-                    authorityRepository.findByName(AuthorityName.ROLE_ADMIN);
+            authority = authorityRepository.findByName(AuthorityName.ROLE_ADMIN);
         }else{
             authority =
                     authorityRepository.findByName(AuthorityName.ROLE_USER);
         }
-        Student student = registerEntity.getStudent();
+        Product product = registerEntity.getProduct();
         User user = User.builder().username(registerEntity.getUsername())
                 .password(registerEntity.getPassword())
-                .firstname(student.getName())
-                .lastname("default surnmae")
+                .firstname(product.getName())
+                .lastname("default surname")
                 .email("default @default")
 
                 .lastPasswordResetDate(Date.from(LocalDateTime.now().atZone(ZoneId.systemDefault()).toInstant()))
                 .authorities(Arrays.asList(authority))
                 .enabled(true)
                 .build();
-        student = studentDao.addStudent(student);
+        product = productDao.addProduct(product);
         user = userRepository.save(user);
-        student.setUser(user);
-        user.setStudent(student);
+        product.setUser(user);
+        user.setProduct(product);
 
-        Hibernate.initialize(student.getUser());
-        Hibernate.initialize(student.getAuthorities());
-        return student;
+        Hibernate.initialize(product.getUser());
+        Hibernate.initialize(product.getAuthorities());
+        return product;
 
     }
 

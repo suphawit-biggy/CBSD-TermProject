@@ -1,7 +1,7 @@
 package camt.cbsd.entity.security;
 
 import camt.cbsd.config.json.View;
-import camt.cbsd.entity.Student;
+import camt.cbsd.entity.Product;
 import com.fasterxml.jackson.annotation.*;
 import lombok.*;
 
@@ -17,7 +17,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor(suppressConstructorProperties = true)
 @Data
-@EqualsAndHashCode(exclude = "student")
+@EqualsAndHashCode(exclude = "product")
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class User {
 
@@ -29,7 +29,7 @@ public class User {
 
     @OneToOne(mappedBy = "user")
     @JsonBackReference
-    Student student;
+    Product product;
 
     @Column(name = "USERNAME", length = 50, unique = true)
     @NotNull

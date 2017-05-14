@@ -1,10 +1,9 @@
 package camt.cbsd.controller;
 
 import camt.cbsd.config.json.View;
+import camt.cbsd.entity.Product;
 import camt.cbsd.entity.RegisterEntity;
-import camt.cbsd.entity.Student;
-import camt.cbsd.services.StudentService;
-import camt.cbsd.services.StudentServiceImpl;
+import camt.cbsd.services.ProductService;
 import com.fasterxml.jackson.annotation.JsonView;
 import org.apache.commons.io.FilenameUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,31 +13,25 @@ import org.springframework.core.io.UrlResource;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.imageio.ImageIO;
 import javax.servlet.http.HttpServletRequest;
-import javax.ws.rs.QueryParam;
-
-
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.List;
 
 @RestController
 @ConfigurationProperties(prefix = "server")
-public class StudentController {
-    StudentService studentService;
+public class ProductController {
+    ProductService productService;
     String imageServerDir;
     String imageUrl;
     String baseUrl;
@@ -56,51 +49,51 @@ public class StudentController {
     }
 
     @Autowired
-    public void setStudentService(StudentService studentService) {
-        this.studentService = studentService;
+    public void setProductService(ProductService productService) {
+        this.productService = productService;
     }
 
 
-    @GetMapping("/student")
-    public List<Student> getStudents() {
+    @GetMapping("/product")
+    public List<Product> getProducts() {
 
-        List<Student> students = studentService.getStudents();
-        return students;
+        List<Product> products = productService.getProducts();
+        return products;
     }
 
 
-    @GetMapping("/student/{id}")
-    public ResponseEntity<?> getStudent(@PathVariable("id") long id) {
-        Student student = studentService.findById(id);
-        if (student != null)
-            return ResponseEntity.ok(student);
+    @GetMapping("/product/{id}")
+    public ResponseEntity<?> getProduct(@PathVariable("id") long id) {
+        Product product = productService.findById(id);
+        if (product != null)
+            return ResponseEntity.ok(product);
         else
             //http code 204
             return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
 
     }
 
-    @GetMapping("/students")
-    public ResponseEntity<?> queryStudent(HttpServletRequest request, @RequestParam("search") String query) {
-        List<Student> students = studentService.queryStudent(query);
-        if (students != null)
-            return ResponseEntity.ok(students);
+    @GetMapping("/products")
+    public ResponseEntity<?> queryProduct(HttpServletRequest request, @RequestParam("search") String query) {
+        List<Product> products = productService.queryProduct(query);
+        if (products != null)
+            return ResponseEntity.ok(products);
         else
             //http code 204
             return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
 
     }
 
-    @PostMapping("/student")
-    public Student uploadOnlyStudent(@RequestBody Student student) {
+    @PostMapping("/product")
+    public Product uploadOnlyProduct(@RequestBody Product product) {
 
-        studentService.addStudent(student);
-        return student;
+        productService.addProduct(product);
+        return product;
 
     }
 
 
-    @PostMapping("/student/image")
+    @PostMapping("/product/image")
     public ResponseEntity<?> uploadImage(@RequestParam("file") MultipartFile file) throws IOException {
         try {
             BufferedImage img = ImageIO.read(file.getInputStream());
@@ -118,7 +111,7 @@ public class StudentController {
     }
 
 
-    @GetMapping("/student/images/{fileName:.+}")
+    @GetMapping("/product/images/{fileName:.+}")
     public ResponseEntity<?> getStuentImage(@PathVariable("fileName") String filename) {
         Path pathFile = Paths.get(imageServerDir + filename);
 
@@ -133,18 +126,13 @@ public class StudentController {
         } catch (MalformedURLException e) {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
         }
-
     }
 
     @JsonView(View.Login.class)
-    @PostMapping("/studentAuthen")
-    public Student uploadStudentAuthen(@RequestBody RegisterEntity user) {
+    @PostMapping("/productAuthen")
+    public Product uploadProductAuthen(@RequestBody RegisterEntity user) {
 
-        Student student = studentService.addStudent(user);
-        return student;
-
+        Product product = productService.addProduct(user);
+        return product;
     }
-
-
-
 }

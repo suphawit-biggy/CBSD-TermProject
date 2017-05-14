@@ -25,7 +25,7 @@ import java.util.Optional;
 @AllArgsConstructor(suppressConstructorProperties = true)
 @JsonIgnoreProperties(ignoreUnknown = true)
 @Builder
-public class Student {
+public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     long id;

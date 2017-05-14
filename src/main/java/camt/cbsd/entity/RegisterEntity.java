@@ -13,6 +13,6 @@ public class RegisterEntity {
     String username;
     String password;
     String role;
-    Student student;
+    Product product;
 
 }
