@@ -27,10 +27,6 @@ export class ProductsDataService {
     return null;
   }
 
-  addProductWihtAuthen(product: Product, imageFile: any, user: any) {
-    return null;
-  }
-
   removeProoduct(id: number) {
     return null;
   }

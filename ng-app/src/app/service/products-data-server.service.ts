@@ -89,33 +89,6 @@ export class ProductsDataServerService {
       })
   }
 
-
-  addProductWihtAuthen(product: Product, file: any, user: any) {
-    console.log('called');
-    let formData = new FormData();
-    let fileName: string;
-    formData.append('file', file);
-    let header = new Headers({'Authorization': 'Bearer ' + this.authenticationService.getToken()});
-    let options = new RequestOptions({headers: header});
-    return this.http.post('http://localhost:8080/product/image',
-      formData, options)
-      .flatMap(filename => {
-        product.image = filename.text();
-        let headers = new Headers({'Content-Type': 'application/json'});
-        let options = new RequestOptions({headers: this.headers});
-        user.product = product;
-        let body = JSON.stringify(user);
-        return this.http.post('http://localhost:8080/productAuthen', body,
-          options)
-          .map(res => {
-            return res.json()
-          })
-          .catch((error: any) => {
-            return Observable.throw(new Error(error.status))
-          })
-      })
-  }
-
   removeProduct(id: number) {
     return this.http.delete('http://localhost:8080/product/' + id)
   }

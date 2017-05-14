@@ -118,7 +118,7 @@ public class DataLoader implements ApplicationRunner {
         user3.setProduct(product3);
     }
 
-    User user1, user2, user3;
+    User user1, user2, user3, user4;
 
     private void securitySetup() {
         user1 = User.builder()
@@ -151,21 +151,37 @@ public class DataLoader implements ApplicationRunner {
                 .lastPasswordResetDate(Date.from(LocalDate.of(2016, 01, 01).atStartOfDay(ZoneId.systemDefault()).toInstant()))
                 .build();
 
-        Authority user = Authority.builder().name(AuthorityName.ROLE_USER).build();
-        Authority admin = Authority.builder().name(AuthorityName.ROLE_ADMIN).build();
-        Authority staff = Authority.builder().name(AuthorityName.ROLE_STAFF).build();
-        authorityRepository.save(user);
-        authorityRepository.save(admin);
-        authorityRepository.save(staff);
+        user4 = User.builder()
+                .username("disabled")
+                .password("disabled")
+                .firstname("user")
+                .lastname("user")
+                .email("disabled@user.com")
+                .enabled(false)
+                .lastPasswordResetDate(Date.from(LocalDate.of(2016, 01, 01).atStartOfDay(ZoneId.systemDefault()).toInstant()))
+                .build();
+
+        Authority auth1 = Authority.builder().name(AuthorityName.ROLE_USER).build();
+        Authority auth2 = Authority.builder().name(AuthorityName.ROLE_ADMIN).build();
+        Authority auth3 = Authority.builder().name(AuthorityName.ROLE_STAFF).build();
+        authorityRepository.save(auth1);
+        authorityRepository.save(auth2);
+        authorityRepository.save(auth3);
         user1.setAuthorities(new ArrayList<>());
-        user1.getAuthorities().add(user);
+        user1.getAuthorities().add(auth1);
         user2.setAuthorities(new ArrayList<>());
-        user2.getAuthorities().add(admin);
+        user2.getAuthorities().add(auth1);
+        user2.getAuthorities().add(auth2);
+        user2.getAuthorities().add(auth3);
         user3.setAuthorities(new ArrayList<>());
-        user3.getAuthorities().add(staff);
+        user3.getAuthorities().add(auth1);
+        user3.getAuthorities().add(auth3);
+        user4.setAuthorities(new ArrayList<>());
+        user4.getAuthorities().add(auth1);
 
         userSecurityRepository.save(user1);
         userSecurityRepository.save(user2);
         userSecurityRepository.save(user3);
+        userSecurityRepository.save(user4);
     }
 }

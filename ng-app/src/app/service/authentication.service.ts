@@ -1,7 +1,7 @@
 import {Injectable} from '@angular/core';
 import {Headers, Http, Response} from '@angular/http';
 import {Observable} from "rxjs/Rx";
-import {isUndefined} from "util";
+
 @Injectable()
 export class AuthenticationService {
   private authUrl = 'http://localhost:8080/auth';
