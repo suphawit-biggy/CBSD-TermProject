@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CBSD-TermProject.iml" filepath="$PROJECT_DIR$/.idea/modules/CBSD-TermProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CBSD-TermProject_main.iml" filepath="$PROJECT_DIR$/.idea/modules/CBSD-TermProject_main.iml" group="CBSD-TermProject" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CBSD-TermProject_test.iml" filepath="$PROJECT_DIR$/.idea/modules/CBSD-TermProject_test.iml" group="CBSD-TermProject" />
+    </modules>
+  </component>
+</project>
