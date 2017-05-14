@@ -36,10 +36,8 @@
     </div>
     <div class="form-group">
       <div class="col-sm-offset-2 col-sm-10">
-        <button type="button" class="btn btn-primary btn-xs col-md-1 pen-button" (click)="downQuantity(student)">-</button>
-        <input type="text" class="col-md-1 pen-input" [(ngModel)]="student.penAmount"/>
-        <button type="button" class="btn btn-primary btn-xs col-md-1 pen-button" (click)="upQuantity(student)">+</button>
-        <button type="submit" class="btn btn-default">Add to chart</button>
+        <button type="button" class="btn btn-success btn-xs">Edit</button>
+        <button type="button" class="btn btn-danger btn-xs">Remove</button>
       </div>
     </div>
     <course-list [count]="student?.enrolledCourse.length" [enrolledCourse]="student?.enrolledCourse"></course-list>
