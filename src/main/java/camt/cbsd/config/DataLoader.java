@@ -71,15 +71,24 @@ public class DataLoader implements ApplicationRunner {
     @Transactional
     public void run(ApplicationArguments args) throws Exception {
         imageBaseUrl = baseUrl + imageUrl;
-        Product product1 = Product.builder().name("Mitsuha").surname("Miyamizu")
-                .gpa(2.15).image(imageBaseUrl + "mitsuha.gif").feature(true)
-                .penAmount(0).description("The most beloved one").build();
-        Product product2 = Product.builder().name("Prayuth").surname("The minister")
-                .gpa(3.59).image(imageBaseUrl + "tu.jpg").feature(false)
-                .penAmount(15).description("The great man ever!!!!").build();
-        Product product3 = Product.builder().name("Jurgen").surname("Kloop")
-                .gpa(2.15).image(imageBaseUrl + "Kloop.gif").feature(true)
-                .penAmount(2).description("The man for the Kop").build();
+        Product product1 = Product.builder().name("Mitsuha")
+                .description("The most beloved one")
+                .image(imageBaseUrl + "mitsuha.gif")
+                .amount(2)
+                .rate(2.2)
+                .price(14324).build();
+        Product product2 = Product.builder().name("Prayuth")
+                .description("The great man ever!!!!")
+                .image(imageBaseUrl + "tu.jpg")
+                .amount(2)
+                .rate(2.2)
+                .price(14324).build();
+        Product product3 = Product.builder().name("Jurgen")
+                .description("The man for the Kop")
+                .image(imageBaseUrl + "Kloop.gif")
+                .amount(2)
+                .rate(2.2)
+                .price(14324).build();
 
         Course course1 = Course.builder().courseId("953331").courseName("CBSD").build();
         Course course2 = Course.builder().courseId("953323").courseName("Software Construction").build();
@@ -113,6 +122,16 @@ public class DataLoader implements ApplicationRunner {
 
     private void securitySetup() {
         user1 = User.builder()
+                .username("user")
+                .password("user")
+                .firstname("user")
+                .lastname("user")
+                .email("enabled@user.com")
+                .enabled(true)
+                .lastPasswordResetDate(Date.from(LocalDate.of(2016, 01, 01).atStartOfDay(ZoneId.systemDefault()).toInstant()))
+                .build();
+
+        user2 = User.builder()
                 .username("admin")
                 .password("admin")
                 .firstname("admin")
@@ -122,36 +141,28 @@ public class DataLoader implements ApplicationRunner {
                 .lastPasswordResetDate(Date.from(LocalDate.of(2016, 01, 01).atStartOfDay(ZoneId.systemDefault()).toInstant()))
                 .build();
 
-        user2 = User.builder()
-                .username("user")
-                .password("user")
-                .firstname("user")
-                .lastname("user")
-                .email("enabled@user.com")
+        user3 = User.builder()
+                .username("staff")
+                .password("staff")
+                .firstname("staff")
+                .lastname("staff")
+                .email("enabled@staff.com")
                 .enabled(true)
                 .lastPasswordResetDate(Date.from(LocalDate.of(2016, 01, 01).atStartOfDay(ZoneId.systemDefault()).toInstant()))
                 .build();
-        user3 = User.builder()
-                .username("disabled")
-                .password("disabled")
-                .firstname("user")
-                .lastname("user")
-                .email("disabled@user.com")
-                .enabled(false)
-                .lastPasswordResetDate(Date.from(LocalDate.of(2016, 01, 01).atStartOfDay(ZoneId.systemDefault()).toInstant()))
-                .build();
 
-        Authority auth1 = Authority.builder().name(AuthorityName.ROLE_USER).build();
-        Authority auth2 = Authority.builder().name(AuthorityName.ROLE_ADMIN).build();
-        authorityRepository.save(auth1);
-        authorityRepository.save(auth2);
+        Authority user = Authority.builder().name(AuthorityName.ROLE_USER).build();
+        Authority admin = Authority.builder().name(AuthorityName.ROLE_ADMIN).build();
+        Authority staff = Authority.builder().name(AuthorityName.ROLE_STAFF).build();
+        authorityRepository.save(user);
+        authorityRepository.save(admin);
+        authorityRepository.save(staff);
         user1.setAuthorities(new ArrayList<>());
-        user1.getAuthorities().add(auth1);
-        user1.getAuthorities().add(auth2);
+        user1.getAuthorities().add(user);
         user2.setAuthorities(new ArrayList<>());
-        user2.getAuthorities().add(auth1);
+        user2.getAuthorities().add(admin);
         user3.setAuthorities(new ArrayList<>());
-        user3.getAuthorities().add(auth1);
+        user3.getAuthorities().add(staff);
 
         userSecurityRepository.save(user1);
         userSecurityRepository.save(user2);

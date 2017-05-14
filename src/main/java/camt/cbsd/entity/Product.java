@@ -30,17 +30,15 @@ public class Product {
     @GeneratedValue(strategy = GenerationType.AUTO)
     long id;
     @JsonView(View.Login.class)
-    String studentId;
-    @JsonView(View.Login.class)
     String name;
-    @JsonView(View.Login.class)
-    String surname;
-    double gpa;
+    String description;
     @JsonView(View.Login.class)
     String image;
-    boolean feature;
-    int penAmount;
-    String description;
+    @JsonView(View.Login.class)
+    int amount;
+    double rate;
+    @JsonView(View.Login.class)
+    double price;
     @ManyToMany
     List<Course> enrolledCourse = new ArrayList<>();
 
