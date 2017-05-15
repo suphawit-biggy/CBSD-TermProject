@@ -22,6 +22,7 @@ import {UserAddComponent} from './user/user-add/user-add.component';
 import {UsersDataService} from './service/users-data.service';
 import {UsersDataServerService} from './service/users-data-server.service';
 import {UserListComponent} from './user/user-list/user-list.component';
+import {UserRoutingModule} from './user/user-routing.module';
 
 
 @NgModule({
@@ -37,7 +38,7 @@ import {UserListComponent} from './user/user-list/user-list.component';
     UserListComponent
   ],
   imports: [BrowserModule, FormsModule, HttpModule,
-    ProductRoutingModule, AppRoutingModule, SelectModule],
+    UserRoutingModule, ProductRoutingModule, AppRoutingModule, SelectModule],
   bootstrap: [AppComponent],
   providers: [{provide: ProductsDataService, useClass: ProductsDataServerService},
     {provide: UsersDataService, useClass: UsersDataServerService},

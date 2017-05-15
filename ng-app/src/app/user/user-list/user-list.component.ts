@@ -15,12 +15,7 @@ export class UserListComponent implements OnInit {
 
   ngOnInit() {
     this.usersDataService.getUsersData()
-      .subscribe(users => this.users = users,
-        (error : Error ) => {
-          if (error.message === 'UnAuthorize'){
-            this.router.navigate(['login'],{queryParams:{source:'user'}});
-          }
-        });
+      .subscribe(users => this.users = users);
   }
 
 

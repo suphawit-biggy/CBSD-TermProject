@@ -35,7 +35,6 @@ export class ProductsAddComponent {
   addProduct(product: Product) {
     let result: Product;
     let inputEl: HTMLInputElement = this.inputEl.nativeElement;
-
     this.productDataService.addProduct(product,inputEl.files.item(0))
       .subscribe(resultProduct => {
         result = resultProduct
