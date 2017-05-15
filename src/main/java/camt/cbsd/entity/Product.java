@@ -39,8 +39,6 @@ public class Product {
     double rate;
     @JsonView(View.Login.class)
     double price;
-    @ManyToMany
-    List<Course> enrolledCourse = new ArrayList<>();
 
     @OneToOne
     User user;
@@ -48,13 +46,4 @@ public class Product {
     public List<Authority> getAuthorities(){
         return user.getAuthorities();
     }
-
-    public List<Course> addCourse(Course course) {
-        enrolledCourse = Optional.ofNullable(enrolledCourse).orElse(new ArrayList<>());
-        enrolledCourse.add(course);
-        return enrolledCourse;
-
-    }
-
-
 }

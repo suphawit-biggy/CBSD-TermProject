@@ -43,9 +43,6 @@ public class ProductServiceImpl implements ProductService {
     @Transactional
     public List<Product> getProducts(){
         List<Product> products = productDao.getProducts();
-        for(Product product:products){
-            Hibernate.initialize(product.getEnrolledCourse());
-        }
         return products;
     }
 
@@ -53,7 +50,6 @@ public class ProductServiceImpl implements ProductService {
     @Transactional
     public Product findById(long id) {
         Product product = productDao.findById(id);
-        Hibernate.initialize(product.getEnrolledCourse());
         return product;
     }
 
