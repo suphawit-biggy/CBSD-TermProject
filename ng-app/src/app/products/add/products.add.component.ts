@@ -1,4 +1,4 @@
-import {Component,ElementRef, Input, ViewChild} from '@angular/core';
+import {Component, ElementRef, Input, ViewChild} from '@angular/core';
 import {Product} from '../product';
 import {Router} from "@angular/router";
 import {ProductsDataService} from "../../service/products-data.service";
@@ -19,28 +19,29 @@ export class ProductsAddComponent {
   }
 
   upQuantity(product: Product) {
-    if(product.amount == null)
+    if (product.amount == null)
       product.amount = 0;
     product.amount++;
   }
 
   downQuantity(product: Product) {
-    if(product.amount == null)
+    if (product.amount == null)
       product.amount = 0;
     if (product.amount > 0)
       product.amount--;
   }
 
   @ViewChild('fileInput') inputEl: ElementRef;
+
   addProduct(product: Product) {
     let result: Product;
     let inputEl: HTMLInputElement = this.inputEl.nativeElement;
-    this.productDataService.addProduct(product,inputEl.files.item(0))
+    this.productDataService.addProduct(product, inputEl.files.item(0))
       .subscribe(resultProduct => {
         result = resultProduct
-        if (result != null){
+        if (result != null) {
           this.router.navigate(['/list']);
-        }else{
+        } else {
           alert("Error in adding the product");
         }
       });

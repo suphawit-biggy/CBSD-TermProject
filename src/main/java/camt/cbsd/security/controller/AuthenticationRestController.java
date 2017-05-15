@@ -2,9 +2,11 @@ package camt.cbsd.security.controller;
 
 import camt.cbsd.config.json.View;
 import camt.cbsd.entity.Product;
+import camt.cbsd.entity.security.User;
 import camt.cbsd.security.JwtAuthenticationRequest;
 import camt.cbsd.security.JwtTokenUtil;
 import camt.cbsd.security.JwtUser;
+import camt.cbsd.security.repository.UserRepository;
 import camt.cbsd.security.service.JwtAuthenticationResponse;
 import camt.cbsd.services.ProductService;
 import com.fasterxml.jackson.annotation.JsonView;
@@ -43,6 +45,9 @@ public class AuthenticationRestController {
     @Autowired
     private ProductService productService;
 
+    @Autowired
+    private UserRepository userRepository;
+
     @JsonView(View.Login.class)
     @PostMapping("${jwt.route.authentication.path}")
     public ResponseEntity<?> createAuthenticationToken(@RequestBody JwtAuthenticationRequest authenticationRequest, Device device) throws AuthenticationException {
@@ -59,13 +64,14 @@ public class AuthenticationRestController {
         // Reload password post-security so we can generate token
         final UserDetails userDetails = userDetailsService.loadUserByUsername(authenticationRequest.getUsername());
         final String token = jwtTokenUtil.generateToken(userDetails, device);
-        Product product = productService.getProductForTransfer(authenticationRequest.getUsername());
         // Return the token
 //        return ResponseEntity.ok(new JwtAuthenticationResponse(token));
+
+        User user = userRepository.findByUsername(authenticationRequest.getUsername());
         Map result = new HashMap();
-        result.put("token",token);
-        result.put("product",product);
-        return  ResponseEntity.ok(result);
+        result.put("token", token);
+        result.put("user", user);
+        return ResponseEntity.ok(result);
     }
 
 

@@ -44,11 +44,6 @@ public class ProductDaoDBImpl implements ProductDao {
     }
 
     @Override
-    public Product findByUsername(String username) {
-        return productRepository.findByUserUsername(username);
-    }
-
-    @Override
     public List<Product> getProducts(String searchText) {
         return productRepository.findByNameIgnoreCaseContainingOrDescriptionIgnoreCaseContaining(searchText,searchText);
     }

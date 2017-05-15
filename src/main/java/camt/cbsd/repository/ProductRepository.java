@@ -10,6 +10,5 @@ import java.util.List;
  */
 public interface ProductRepository extends CrudRepository<Product,Long> {
     Product findById(Long id);
-    Product findByUserUsername(String username);
     List<Product> findByNameIgnoreCaseContainingOrDescriptionIgnoreCaseContaining(String searchText, String searchText1);
 }

@@ -58,15 +58,6 @@ public class ProductServiceImpl implements ProductService {
         return productDao.addProduct(product);
     }
 
-    @Transactional
-    @Override
-    public Product getProductForTransfer(String username) {
-        Product product = productDao.findByUsername(username);
-        Hibernate.initialize(product.getUser());
-        Hibernate.initialize(product.getAuthorities());
-        return product;
-    }
-
     @Override
     public Product addProduct(Product product, String imageFileName, BufferedImage image) throws IOException {
         // save file to the server

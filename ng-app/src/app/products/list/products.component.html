@@ -21,10 +21,11 @@
         <p>Description <br> {{checkDes(product.description)}}</p>
         <p>In stock: {{product.amount}}</p>
         <p>Rating: {{product.rate}}</p>
-        <h3>Price: {{product.price}}</h3>
+        <h3>Price: {{product.price | currency:'THB':true}}</h3>
         <div class="row">
           <div class="col-sm-offset-1 ">
             <button type="button" class="btn btn-success btn-xs" (click)="showDetail(product)">More</button>
+            <button *ngIf="hasNotRole('STAFF')" type="button" class="btn btn-warning btn-xs">Add to Cart</button>
           </div>
         </div>
       </div>

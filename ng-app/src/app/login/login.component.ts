@@ -40,7 +40,11 @@ export class LoginComponent implements OnInit {
       .subscribe(result =>{
         if (result === true){
           //login success
-          this.router.navigate(['list']).then($=>window.location.reload());
+          if(this.model.username == 'admin') {
+            this.router.navigate(['user-list']).then($=>window.location.reload());
+          } else {
+            this.router.navigate(['list']).then($=>window.location.reload());
+          }
         }else{
           //login failed
           this.error = 'Username or password is incorrect';

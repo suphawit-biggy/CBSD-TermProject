@@ -21,9 +21,9 @@ export class AuthenticationService {
         if (token) {
           // store username and jwt token in local storage to keep user logged in between page refreshes
           localStorage.setItem('currentUser', JSON.stringify({username: username, token: token}));
-          let product = response.json().product;
-          console.log(product);
-          localStorage.setItem('userDetails', JSON.stringify(product));
+          let user = response.json().user;
+          console.log(user);
+          localStorage.setItem('userDetails', JSON.stringify(user));
           // return true to indicate successful login
           return true;
         } else {
@@ -68,6 +68,25 @@ export class AuthenticationService {
         }
       }
       return false;
+
+    }
+  }
+
+  hasNotRole(role: string): boolean {
+    let user: any = this.getCurrentUser();
+
+    if (user) {
+      let roleList:string[] = role.split(",");
+      for(let j = 0;j < roleList.length;j++) {
+        let authList = user.authorities;
+        let userRole = 'ROLE_' + roleList[j].trim().toUpperCase();
+        for (let i = 0; i < authList.length; i++) {
+          if (authList[i].name == userRole) {
+            return false;
+          }
+        }
+      }
+      return true;
 
     }
   }

@@ -1,15 +1,16 @@
 import {Component} from '@angular/core';
 import {Product} from '../product';
-import {ActivatedRoute, Params} from "@angular/router";
+import {ActivatedRoute, Params, Router} from "@angular/router";
 import {ProductsDataService} from "../../service/products-data.service";
 import 'rxjs/add/operator/switchMap';
+import {AuthenticationService} from '../../service/authentication.service';
 @Component({
   selector: 'products-view',
   templateUrl: './products.view.component.html',
   styleUrls: ['./products.view.component.css']
 })
 export class ProductsViewComponent {
-  constructor(private route: ActivatedRoute, private productDataService: ProductsDataService) {
+  constructor(private route: ActivatedRoute, private productDataService: ProductsDataService, private  authenService: AuthenticationService, private router: Router) {
   }
 
   product: Product;
@@ -30,7 +31,15 @@ export class ProductsViewComponent {
       );
   }
 
+  editProduct(product: Product) {
+    this.router.navigate(['/edit', product.id]);
+  }
+
   removeProduct(id: number) {
     this.productDataService.removeProoduct(id)
+  }
+
+  hasRole(role: string) {
+    return this.authenService.hasRole(role);
   }
 }

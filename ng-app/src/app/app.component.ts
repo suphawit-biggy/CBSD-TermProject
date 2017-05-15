@@ -4,5 +4,5 @@ import {Component} from '@angular/core';
  templateUrl : './app.component.html'
 })
 export class AppComponent {
-	name = 'SE331';
+	name = 'BiggyPraew nikka';
 }

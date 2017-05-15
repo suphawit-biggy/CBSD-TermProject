@@ -14,7 +14,6 @@ public interface ProductService {
     List<Product> getProducts();
     Product findById(long id);
     Product addProduct(Product product);
-    Product getProductForTransfer(String username);
     Product addProduct(Product product, String imageFileName, BufferedImage image) throws IOException;
     List<Product> queryProduct(String query);
     Product addProduct(RegisterEntity registerEntity);

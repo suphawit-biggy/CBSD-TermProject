@@ -24,4 +24,8 @@ export class MenuComponent {
   hasRole(role: string) {
     return this.authenService.hasRole(role);
   }
+
+  hasNotRole(role: string) {
+    return this.authenService.hasNotRole(role);
+  }
 }

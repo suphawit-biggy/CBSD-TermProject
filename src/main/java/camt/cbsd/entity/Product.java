@@ -39,11 +39,4 @@ public class Product {
     double rate;
     @JsonView(View.Login.class)
     double price;
-
-    @OneToOne
-    User user;
-    @JsonView(View.Login.class)
-    public List<Authority> getAuthorities(){
-        return user.getAuthorities();
-    }
 }

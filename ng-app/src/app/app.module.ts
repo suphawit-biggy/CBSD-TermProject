@@ -23,6 +23,7 @@ import {UsersDataService} from './service/users-data.service';
 import {UsersDataServerService} from './service/users-data-server.service';
 import {UserListComponent} from './user/user-list/user-list.component';
 import {UserRoutingModule} from './user/user-routing.module';
+import { EditComponent } from './products/edit/edit.component';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import {UserRoutingModule} from './user/user-routing.module';
     PurchaseHistoryComponent,
     CartComponent,
     UserAddComponent,
-    UserListComponent
+    UserListComponent,
+    EditComponent
   ],
   imports: [BrowserModule, FormsModule, HttpModule,
     UserRoutingModule, ProductRoutingModule, AppRoutingModule, SelectModule],

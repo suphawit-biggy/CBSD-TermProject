@@ -27,10 +27,6 @@ public class User {
     @SequenceGenerator(name = "user_seq", sequenceName = "user_seq", allocationSize = 1)
     private Long id;
 
-    @OneToOne(mappedBy = "user")
-    @JsonBackReference
-    Product product;
-
     @Column(name = "USERNAME", length = 50, unique = true)
     @NotNull
     @Size(min = 4, max = 50)

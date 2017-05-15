@@ -62,36 +62,30 @@ public class DataLoader implements ApplicationRunner {
     @Transactional
     public void run(ApplicationArguments args) throws Exception {
         imageBaseUrl = baseUrl + imageUrl;
-        Product product1 = Product.builder().name("Mitsuha")
-                .description("The most beloved one")
-                .image(imageBaseUrl + "mitsuha.gif")
+        Product product1 = Product.builder().name("Artistry - Automatic Lip Liner Pencil Refill")
+                .description("Define, shape, and soften like an expert.")
+                .image(imageBaseUrl + "pic1.jpg")
                 .amount(2)
                 .rate(2.2)
-                .price(14324).build();
-        Product product2 = Product.builder().name("Prayuth")
-                .description("The great man ever!!!!")
-                .image(imageBaseUrl + "tu.jpg")
+                .price(466).build();
+        Product product2 = Product.builder().name("Artistry - Signature Color Sheer Lipstick")
+                .description("Soften, moisturize, and rejuvenate the appearance of lips with the perfect color and coverage.")
+                .image(imageBaseUrl + "pic2.jpg")
+                .amount(5)
+                .rate(2.3)
+                .price(880).build();
+        Product product3 = Product.builder().name("Artistry - Light Up Lip Gloss")
+                .description("Long-lasting, Glides on for exceptional blendability")
+                .image(imageBaseUrl + "pic3.jpg")
                 .amount(2)
                 .rate(2.2)
-                .price(14324).build();
-        Product product3 = Product.builder().name("Jurgen")
-                .description("The man for the Kop")
-                .image(imageBaseUrl + "Kloop.gif")
-                .amount(2)
-                .rate(2.2)
-                .price(14324).build();
+                .price(1800).build();
 
         productDao.addProduct(product1);
         productDao.addProduct(product2);
         productDao.addProduct(product3);
 
         securitySetup();
-        product1.setUser(user1);
-        user1.setProduct(product1);
-        product2.setUser(user2);
-        user2.setProduct(product2);
-        product3.setUser(user3);
-        user3.setProduct(product3);
     }
 
     User user1, user2, user3, user4;
