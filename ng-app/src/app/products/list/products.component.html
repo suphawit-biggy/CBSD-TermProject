@@ -15,6 +15,9 @@
     </div>
     <div class="panel-body row">
       <div class="col-md-6 col-sm-6">
+        <img class="img-responsive" [src]="product.image" [title]="product.name">
+      </div>
+      <div class="col-md-6 col-sm-6">
         <p>Description <br> {{checkDes(product.description)}}</p>
         <p>In stock: {{product.amount}}</p>
         <p>Rating: {{product.rate}}</p>
@@ -23,9 +26,6 @@
           <div class="col-sm-offset-1 ">
             <button type="button" class="btn btn-success btn-xs" (click)="showDetail(product)">More</button>
           </div>
-        </div>
-        <div class="col-md-4 col-sm-6">
-          <img class="img-responsive" [src]="product.image" [title]="product.name">
         </div>
       </div>
     </div>

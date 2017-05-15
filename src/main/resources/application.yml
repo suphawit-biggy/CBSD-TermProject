@@ -9,7 +9,7 @@ spring:
       max-request-size: 10MB
 server:
   baseUrl: http://localhost:8080/
-  imageUrl: student/images/
+  imageUrl: product/images/
   imageServerDir: D:/Biggy's Dell Laptop/Documents/GitHub/CBSD-TermProject/images/
 jwt:
   header: Authorization

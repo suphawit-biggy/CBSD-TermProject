@@ -146,9 +146,7 @@ public class DataLoader implements ApplicationRunner {
         user1.setAuthorities(new ArrayList<>());
         user1.getAuthorities().add(auth1);
         user2.setAuthorities(new ArrayList<>());
-        user2.getAuthorities().add(auth1);
         user2.getAuthorities().add(auth2);
-        user2.getAuthorities().add(auth3);
         user3.setAuthorities(new ArrayList<>());
         user3.getAuthorities().add(auth1);
         user3.getAuthorities().add(auth3);

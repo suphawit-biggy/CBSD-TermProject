@@ -1,6 +1,5 @@
 import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import {Router} from '@angular/router';
-import {Product} from '../../products/product';
 import {UsersDataService} from '../../service/users-data.service';
 import {User} from '../user';
 

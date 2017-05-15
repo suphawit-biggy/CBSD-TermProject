@@ -1,14 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b79dc9d4-6770-4c9c-bfdf-3727349a4c02" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ng-app/src/app/app.module.ts" afterPath="$PROJECT_DIR$/ng-app/src/app/app.module.ts" />
+    <list default="true" id="54c81403-abe5-45f9-a7c9-209f1ddf149a" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/camt/cbsd/config/DataLoader.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/camt/cbsd/config/WebSecurityConfig.class" afterPath="$PROJECT_DIR$/build/classes/main/camt/cbsd/config/WebSecurityConfig.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/camt/cbsd/entity/Product$ProductBuilder.class" afterPath="$PROJECT_DIR$/build/classes/main/camt/cbsd/entity/Product$ProductBuilder.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/camt/cbsd/entity/Product.class" afterPath="$PROJECT_DIR$/build/classes/main/camt/cbsd/entity/Product.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/camt/cbsd/services/ProductServiceImpl.class" afterPath="$PROJECT_DIR$/build/classes/main/camt/cbsd/services/ProductServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/CBSD-TermProject.iml" afterPath="$PROJECT_DIR$/.idea/modules/CBSD-TermProject.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/CBSD-TermProject_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/CBSD-TermProject_main.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/CBSD-TermProject_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/CBSD-TermProject_test.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/application.yml" afterPath="$PROJECT_DIR$/build/resources/main/application.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ng-app/src/app/menu/menu.component.html" afterPath="$PROJECT_DIR$/ng-app/src/app/menu/menu.component.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ng-app/src/app/menu/menu.component.ts" afterPath="$PROJECT_DIR$/ng-app/src/app/menu/menu.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ng-app/src/app/products/add/products.add.component.html" afterPath="$PROJECT_DIR$/ng-app/src/app/products/add/products.add.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ng-app/src/app/products/add/products.add.component.ts" afterPath="$PROJECT_DIR$/ng-app/src/app/products/add/products.add.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/cbsd/entity/RegisterEntity.java" afterPath="$PROJECT_DIR$/src/main/java/camt/cbsd/entity/RegisterEntity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/cbsd/services/ProductServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/camt/cbsd/services/ProductServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ng-app/src/app/products/list/products.component.html" afterPath="$PROJECT_DIR$/ng-app/src/app/products/list/products.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ng-app/src/app/service/authentication.service.ts" afterPath="$PROJECT_DIR$/ng-app/src/app/service/authentication.service.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ng-app/src/app/user/user-add/user-add.component.ts" afterPath="$PROJECT_DIR$/ng-app/src/app/user/user-add/user-add.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ng-app/src/app/user/user-list/user-list.component.html" afterPath="$PROJECT_DIR$/ng-app/src/app/user/user-list/user-list.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ng-app/src/app/user/user-list/user-list.component.ts" afterPath="$PROJECT_DIR$/ng-app/src/app/user/user-list/user-list.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/cbsd/config/DataLoader.java" afterPath="$PROJECT_DIR$/src/main/java/camt/cbsd/config/DataLoader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/cbsd/config/WebSecurityConfig.java" afterPath="$PROJECT_DIR$/src/main/java/camt/cbsd/config/WebSecurityConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application.yml" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -26,30 +45,121 @@
     </projectState>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="TypeScript File" />
-        <option value="package_json" />
-        <option value="Class" />
-      </list>
-    </option>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="products.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ng-app/src/app/products/list/products.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="16" column="26" lean-forward="false" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="products.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ng-app/src/app/products/list/products.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="products-data-server.service.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ng-app/src/app/service/products-data-server.service.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="products-data.service.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ng-app/src/app/service/products-data.service.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-128">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataLoader.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/camt/cbsd/config/DataLoader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="492">
+              <caret line="88" column="16" lean-forward="false" selection-start-line="88" selection-start-column="16" selection-end-line="88" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/camt/cbsd/controller/ProductController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="89" column="23" lean-forward="true" selection-start-line="89" selection-start-column="23" selection-end-line="89" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/camt/cbsd/services/ProductServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="177">
+              <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="65" selection-end-column="55" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductDaoDBImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/camt/cbsd/dao/ProductDaoDBImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="63">
+              <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Product.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/camt/cbsd/entity/Product.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="237">
+              <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="47" selection-end-column="5" />
+              <folding>
+                <element signature="e#1182#1183#0" expanded="true" />
+                <element signature="e#1226#1227#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WebSecurityConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/camt/cbsd/config/WebSecurityConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="284">
+              <caret line="67" column="79" lean-forward="false" selection-start-line="67" selection-start-column="79" selection-end-line="67" selection-end-column="79" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>addproduct</find>
-      <find>add</find>
-      <find>name</find>
-      <find>surname</find>
-      <find>Student</find>
-      <find>header</find>
-      <find>produc</find>
-      <find>product</find>
-      <find>course</find>
       <find>student</find>
-      <find>user</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -288,7 +398,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="2989494416663" />
+        <entry key="$PROJECT_DIR$" value="2989737178915" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -475,57 +585,18 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ng-app/src/app/students/list/students.component.html" />
-        <option value="$PROJECT_DIR$/ng-app/src/app/students/list/students.component.ts" />
-        <option value="C:/Comp-Base/assignment/assignment3/web/app/items/list/items.component.html" />
-        <option value="$PROJECT_DIR$/ng-app/src/app/students/list/products.component.ts" />
-        <option value="$PROJECT_DIR$/ng-app/src/app/students/list/products.component.html" />
-        <option value="$PROJECT_DIR$/ng-app/src/app/students/add/students.add.component.css" />
-        <option value="$PROJECT_DIR$/ng-app/src/app/students/add/products.add.component.ts" />
-        <option value="$PROJECT_DIR$/ng-app/src/app/students/add/products.add.component.html" />
-        <option value="$PROJECT_DIR$/ng-app/src/app/service/students-data-server.service.ts" />
-        <option value="$PROJECT_DIR$/ng-app/src/app/app.component.html" />
-        <option value="$PROJECT_DIR$/ng-app/src/app/app-routing.module.ts" />
-        <option value="$PROJECT_DIR$/ng-app/src/app/service/course-server.service.ts" />
-        <option value="$PROJECT_DIR$/ng-app/src/app/course/add-course/add-course.component.ts" />
-        <option value="$PROJECT_DIR$/ng-app/src/app/course/list-course/list-course.component.ts" />
-        <option value="$PROJECT_DIR$/ng-app/src/app/products/course-list/course-list.component.ts" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/ng-app/src/app/products/list/products.component.html" />
-        <option value="$PROJECT_DIR$/ng-app/src/app/products/product.ts" />
-        <option value="$PROJECT_DIR$/ng-app/src/app/user/add/add.component.html" />
-        <option value="$PROJECT_DIR$/ng-app/src/app/user/user-add/user-add.component.css" />
-        <option value="$PROJECT_DIR$/ng-app/src/app/user/user-add/user-add.component.html" />
-        <option value="$PROJECT_DIR$/../product-add/product-add.component.html" />
-        <option value="$PROJECT_DIR$/ng-app/src/app/service/products-data-server.service.ts" />
+        <option value="$PROJECT_DIR$/ng-app/src/app/user/user-list/user-list.component.html" />
+        <option value="$PROJECT_DIR$/ng-app/src/app/menu/menu.component.ts" />
+        <option value="$PROJECT_DIR$/src/main/java/camt/cbsd/config/DataLoader.java" />
         <option value="$PROJECT_DIR$/ng-app/src/app/service/authentication.service.ts" />
-        <option value="$PROJECT_DIR$/ng-app/src/app/products/product-routing.module.ts" />
-        <option value="$PROJECT_DIR$/ng-app/src/app/user/user-routing.module.ts" />
-        <option value="$PROJECT_DIR$/../SE331-lab12/ng-app/src/app/app-routing.module.ts" />
-        <option value="$PROJECT_DIR$/ng-app/src/app/products/list/products.component.ts" />
-        <option value="$PROJECT_DIR$/ng-app/src/app/user/user.ts" />
+        <option value="$PROJECT_DIR$/ng-app/src/app/menu/menu.component.html" />
         <option value="$PROJECT_DIR$/ng-app/src/app/user/user-list/user-list.component.ts" />
         <option value="$PROJECT_DIR$/ng-app/src/app/user/user-add/user-add.component.ts" />
-        <option value="$PROJECT_DIR$/ng-app/src/app/service/products-data.service.ts" />
-        <option value="$PROJECT_DIR$/ng-app/src/app/service/users-data.service.ts" />
-        <option value="$PROJECT_DIR$/ng-app/src/app/service/users-data-server.service.ts" />
-        <option value="$PROJECT_DIR$/ng-app/src/app/data/package.json" />
-        <option value="$PROJECT_DIR$/src/main/java/camt/cbsd/config/DataLoader.java" />
-        <option value="$PROJECT_DIR$/ng-app/src/app/data/product.json" />
-        <option value="$PROJECT_DIR$/src/main/java/camt/cbsd/services/CourseServiceImpl.java" />
-        <option value="$PROJECT_DIR$/ng-app/src/app/products/view/products.view.component.html" />
-        <option value="$PROJECT_DIR$/ng-app/src/app/login/login.component.ts" />
-        <option value="$PROJECT_DIR$/src/main/java/camt/cbsd/entity/Product.java" />
-        <option value="$PROJECT_DIR$/ng-app/src/app/menu/menu.component.ts" />
-        <option value="$PROJECT_DIR$/ng-app/src/app/menu/menu.component.html" />
-        <option value="$PROJECT_DIR$/ng-app/src/app/app.module.ts" />
-        <option value="$PROJECT_DIR$/ng-app/src/app/products/add/products.add.component.html" />
-        <option value="$PROJECT_DIR$/ng-app/src/app/products/add/products.add.component.ts" />
-        <option value="$PROJECT_DIR$/src/main/java/camt/cbsd/entity/RegisterEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/camt/cbsd/services/ProductService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/camt/cbsd/services/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/ng-app/src/app/products/list/products.component.html" />
+        <option value="$PROJECT_DIR$/src/main/java/camt/cbsd/config/WebSecurityConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/camt/cbsd/services/ProductServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/camt/cbsd/services/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/camt/cbsd/entity/Product.java" />
       </list>
     </option>
   </component>
@@ -602,6 +673,10 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
               <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -716,40 +791,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="entity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="security" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CBSD-TermProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CBSD-TermProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cbsd" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="dao" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -824,42 +865,173 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="ng-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CBSD-TermProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CBSD-TermProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ng-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CBSD-TermProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CBSD-TermProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ng-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CBSD-TermProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
+              <option name="myItemId" value="CBSD-TermProject" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="cbsd" />
+              <option name="myItemId" value="ng-app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="json" />
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CBSD-TermProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CBSD-TermProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ng-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="products" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CBSD-TermProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CBSD-TermProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ng-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="products" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="list" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CBSD-TermProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CBSD-TermProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ng-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="products" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="add" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="settings.editor.selected.configurable" value="settings.typescriptcompiler" />
-    <property name="last_opened_file_path" value="C:/Comp-Base/assignment/assignment3" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
   </component>
   <component name="RunDashboard">
@@ -1304,29 +1476,26 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b79dc9d4-6770-4c9c-bfdf-3727349a4c02" name="Default" comment="" />
-      <created>1494747717913</created>
+      <changelist id="54c81403-abe5-45f9-a7c9-209f1ddf149a" name="Default" comment="" />
+      <created>1494868924289</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1494747717913</updated>
-      <workItem from="1494747720281" duration="17071000" />
-      <workItem from="1494765530972" duration="276000" />
-      <workItem from="1494769668829" duration="12000" />
-      <workItem from="1494773461450" duration="8513000" />
-      <workItem from="1494785867227" duration="2672000" />
-      <workItem from="1494828363339" duration="3391000" />
+      <updated>1494868924289</updated>
+      <workItem from="1494868927988" duration="2435000" />
+      <workItem from="1494874909011" duration="5255000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31935000" />
+    <option name="totallyTimeSpent" value="7690000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1338,15 +1507,15 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2400906" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23039742" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25349087" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1356,7 +1525,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1374,191 +1543,294 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/camt/cbsd/services/CourseServiceImpl.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/camt/cbsd/controller/CourseController.java" />
-    <entry file="file://$PROJECT_DIR$/ng-app/src/app/service/users-data-server.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="33" column="29" lean-forward="true" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ng-app/src/app/purchase-history/purchase-history.component.html">
+    <entry file="file://$PROJECT_DIR$/ng-app/src/app/menu/menu.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ng-app/src/app/products/list/products.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="22" column="24" lean-forward="false" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ng-app/src/app/login/login.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ng-app/src/app/products/product-routing.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="55" lean-forward="false" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ng-app/src/app/login/login.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="42" column="37" lean-forward="false" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#50#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ng-app/src/app/products/view/products.view.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="987">
-          <caret line="47" column="10" lean-forward="false" selection-start-line="47" selection-start-column="10" selection-end-line="47" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ng-app/src/app/user/user-list/user-list.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="22" column="11" lean-forward="false" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ng-app/src/app/user/user-add/user-add.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="17" column="3" lean-forward="false" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ng-app/src/app/user/user-list/user-list.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ng-app/src/app/user/user-add/user-add.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="86" lean-forward="false" selection-start-line="12" selection-start-column="86" selection-end-line="12" selection-end-column="86" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/camt/cbsd/repository/CourseRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ng-app/src/app/menu/menu.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#40#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ng-app/src/app/app-routing.module.ts">
+    <entry file="uml://JavaScript-modules-diagram/D:/Biggy's Dell Laptop/Documents/GitHub/CBSD-TermProject/src/main">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JavaScript-modules-diagram</ID>
+          <OriginalElement>$PROJECT_DIR$/src/main</OriginalElement>
+          <nodes />
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="699.0" y="265.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>All</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>Details</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://MODULES/mdl-CBSD-TermProject_main">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>MODULES</ID>
+          <OriginalElement>mdl-CBSD-TermProject_main</OriginalElement>
+          <nodes>
+            <node x="" y="">mdl-CBSD-TermProject_main</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="132.0" y="18.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JavaScript-modules-diagram/D:/Biggy's Dell Laptop/Documents/GitHub/CBSD-TermProject/src/main/java/camt/cbsd/config;D:/Biggy's Dell Laptop/Documents/GitHub/CBSD-TermProject/src/main/java/camt/cbsd/controller;D:/Biggy's Dell Laptop/Documents/GitHub/CBSD-TermProject/src/main/java/camt/cbsd/dao;D:/Biggy's Dell Laptop/Documents/GitHub/CBSD-TermProject/src/main/java/camt/cbsd/entity;D:/Biggy's Dell Laptop/Documents/GitHub/CBSD-TermProject/src/main/java/camt/cbsd/repository;D:/Biggy's Dell Laptop/Documents/GitHub/CBSD-TermProject/src/main/java/camt/cbsd/security;D:/Biggy's Dell Laptop/Documents/GitHub/CBSD-TermProject/src/main/java/camt/cbsd/services;">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JavaScript-modules-diagram</ID>
+          <OriginalElement>$PROJECT_DIR$/src/main/java/camt/cbsd/config;D:/Biggy's Dell Laptop/Documents/GitHub/CBSD-TermProject/src/main/java/camt/cbsd/controller;D:/Biggy's Dell Laptop/Documents/GitHub/CBSD-TermProject/src/main/java/camt/cbsd/dao;D:/Biggy's Dell Laptop/Documents/GitHub/CBSD-TermProject/src/main/java/camt/cbsd/entity;D:/Biggy's Dell Laptop/Documents/GitHub/CBSD-TermProject/src/main/java/camt/cbsd/repository;D:/Biggy's Dell Laptop/Documents/GitHub/CBSD-TermProject/src/main/java/camt/cbsd/security;D:/Biggy's Dell Laptop/Documents/GitHub/CBSD-TermProject/src/main/java/camt/cbsd/services;</OriginalElement>
+          <nodes />
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="699.0" y="-35.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>All</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>Details</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/camt.cbsd.config.CorsFilter">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>camt.cbsd.config.CorsFilter</OriginalElement>
+          <nodes>
+            <node x="" y="">org.springframework.web.context.ServletContextAware</node>
+            <node x="" y="">camt.cbsd.security.JwtAuthenticationRequest</node>
+            <node x="" y="">camt.cbsd.security.controller.AuthenticationRestController</node>
+            <node x="" y="">camt.cbsd.config.DataLoader</node>
+            <node x="" y="">org.springframework.security.core.userdetails.UserDetailsService</node>
+            <node x="" y="">camt.cbsd.security.service.JwtUserDetailsServiceImpl</node>
+            <node x="" y="">org.springframework.web.WebApplicationInitializer</node>
+            <node x="" y="">org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter</node>
+            <node x="" y="">java.lang.Enum</node>
+            <node x="" y="">camt.cbsd.dao.ProductDao</node>
+            <node x="" y="">org.springframework.web.filter.GenericFilterBean</node>
+            <node x="" y="">org.springframework.data.repository.Repository</node>
+            <node x="" y="">org.springframework.security.config.annotation.SecurityConfigurer</node>
+            <node x="" y="">javax.servlet.Filter</node>
+            <node x="" y="">camt.cbsd.security.JwtAuthenticationEntryPoint</node>
+            <node x="" y="">org.springframework.stereotype.Repository</node>
+            <node x="" y="">javax.persistence.Entity</node>
+            <node x="" y="">camt.cbsd.security.JwtAuthenticationTokenFilter</node>
+            <node x="" y="">org.springframework.data.repository.PagingAndSortingRepository</node>
+            <node x="" y="">org.springframework.boot.ApplicationRunner</node>
+            <node x="" y="">java.lang.SuppressWarnings</node>
+            <node x="" y="">camt.cbsd.entity.security.AuthorityName</node>
+            <node x="" y="">camt.cbsd.security.repository.AuthorityRepository</node>
+            <node x="" y="">lombok.EqualsAndHashCode</node>
+            <node x="" y="">org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity</node>
+            <node x="" y="">camt.cbsd.entity.security.Authority</node>
+            <node x="" y="">org.springframework.web.bind.annotation.RestController</node>
+            <node x="" y="">camt.cbsd.services.ProductServiceImpl</node>
+            <node x="" y="">java.io.Serializable</node>
+            <node x="" y="">org.springframework.context.annotation.Configuration</node>
+            <node x="" y="">lombok.Builder</node>
+            <node x="" y="">camt.cbsd.security.JwtTokenUtil</node>
+            <node x="" y="">org.springframework.beans.factory.DisposableBean</node>
+            <node x="" y="">camt.cbsd.entity.Product</node>
+            <node x="" y="">camt.cbsd.security.repository.UserRepository</node>
+            <node x="" y="">org.springframework.data.jpa.repository.JpaRepository</node>
+            <node x="" y="">com.fasterxml.jackson.annotation.JsonIgnoreProperties</node>
+            <node x="" y="">camt.cbsd.services.UserService</node>
+            <node x="" y="">camt.cbsd.entity.security.User</node>
+            <node x="" y="">camt.cbsd.dao.AbstractProductDao</node>
+            <node x="" y="">camt.cbsd.repository.ProductRepository</node>
+            <node x="" y="">org.springframework.web.filter.OncePerRequestFilter</node>
+            <node x="" y="">org.springframework.beans.factory.Aware</node>
+            <node x="" y="">org.springframework.boot.context.properties.ConfigurationProperties</node>
+            <node x="" y="">org.springframework.data.repository.CrudRepository</node>
+            <node x="" y="">camt.cbsd.security.JwtUserFactory</node>
+            <node x="" y="">org.springframework.beans.factory.InitializingBean</node>
+            <node x="" y="">org.springframework.data.repository.NoRepositoryBean</node>
+            <node x="" y="">javax.persistence.Table</node>
+            <node x="" y="">camt.cbsd.config.CorsFilter</node>
+            <node x="" y="">org.springframework.stereotype.Service</node>
+            <node x="" y="">org.springframework.security.web.context.AbstractSecurityWebApplicationInitializer</node>
+            <node x="" y="">org.springframework.security.core.userdetails.UserDetails</node>
+            <node x="" y="">org.springframework.beans.factory.BeanNameAware</node>
+            <node x="" y="">camt.cbsd.controller.ProductController</node>
+            <node x="" y="">camt.cbsd.config.WebSecurityConfig</node>
+            <node x="" y="">org.springframework.core.annotation.Order</node>
+            <node x="" y="">camt.cbsd.config.SecurityApplicationInitializer</node>
+            <node x="" y="">camt.cbsd.dao.ProductDaoDBImpl</node>
+            <node x="" y="">camt.cbsd.services.ProductService</node>
+            <node x="" y="">org.springframework.security.web.AuthenticationEntryPoint</node>
+            <node x="" y="">camt.cbsd.security.JwtUser</node>
+            <node x="" y="">org.springframework.context.annotation.Profile</node>
+            <node x="" y="">camt.cbsd.services.UserServiceImpl</node>
+            <node x="" y="">org.springframework.security.config.annotation.web.WebSecurityConfigurer</node>
+            <node x="" y="">org.springframework.data.repository.query.QueryByExampleExecutor</node>
+            <node x="" y="">org.springframework.stereotype.Component</node>
+            <node x="" y="">org.springframework.security.config.annotation.web.configuration.EnableWebSecurity</node>
+            <node x="" y="">camt.cbsd.entity.RegisterEntity</node>
+            <node x="" y="">org.springframework.context.EnvironmentAware</node>
+            <node x="" y="">camt.cbsd.security.service.JwtAuthenticationResponse</node>
+            <node x="" y="">lombok.Data</node>
+            <node x="" y="">org.springframework.data.rest.core.annotation.RepositoryRestResource</node>
+            <node x="" y="">java.lang.Comparable</node>
+            <node x="" y="">lombok.AllArgsConstructor</node>
+            <node x="" y="">lombok.NoArgsConstructor</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.7000000000000001" x="995.0" y="913.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/camt.cbsd.entity.Product">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>camt.cbsd.entity.Product</OriginalElement>
+          <nodes>
+            <node x="" y="">camt.cbsd.entity.security.User</node>
+            <node x="" y="">camt.cbsd.dao.AbstractProductDao</node>
+            <node x="" y="">camt.cbsd.repository.ProductRepository</node>
+            <node x="" y="">org.springframework.boot.context.properties.ConfigurationProperties</node>
+            <node x="" y="">org.springframework.data.repository.CrudRepository</node>
+            <node x="" y="">org.springframework.data.repository.NoRepositoryBean</node>
+            <node x="" y="">javax.persistence.Table</node>
+            <node x="" y="">java.lang.Enum</node>
+            <node x="" y="">camt.cbsd.dao.ProductDao</node>
+            <node x="" y="">org.springframework.stereotype.Service</node>
+            <node x="" y="">org.springframework.data.repository.Repository</node>
+            <node x="" y="">org.springframework.stereotype.Repository</node>
+            <node x="" y="">camt.cbsd.controller.ProductController</node>
+            <node x="" y="">javax.persistence.Entity</node>
+            <node x="" y="">camt.cbsd.dao.ProductDaoDBImpl</node>
+            <node x="" y="">camt.cbsd.entity.security.AuthorityName</node>
+            <node x="" y="">camt.cbsd.services.ProductService</node>
+            <node x="" y="">camt.cbsd.entity.security.Authority</node>
+            <node x="" y="">lombok.EqualsAndHashCode</node>
+            <node x="" y="">camt.cbsd.services.UserServiceImpl</node>
+            <node x="" y="">org.springframework.context.annotation.Profile</node>
+            <node x="" y="">org.springframework.web.bind.annotation.RestController</node>
+            <node x="" y="">camt.cbsd.services.ProductServiceImpl</node>
+            <node x="" y="">java.io.Serializable</node>
+            <node x="" y="">lombok.Builder</node>
+            <node x="" y="">camt.cbsd.entity.RegisterEntity</node>
+            <node x="" y="">lombok.Data</node>
+            <node x="" y="">java.lang.Comparable</node>
+            <node x="" y="">camt.cbsd.entity.Product</node>
+            <node x="" y="">lombok.AllArgsConstructor</node>
+            <node x="" y="">lombok.NoArgsConstructor</node>
+            <node x="" y="">com.fasterxml.jackson.annotation.JsonIgnoreProperties</node>
+            <node x="" y="">camt.cbsd.services.UserService</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.6763070077864294" x="654.0" y="540.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../SE331-lab12/src/main/java/camt/cbsd/config/DataLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="442">
+          <caret line="142" column="40" lean-forward="true" selection-start-line="142" selection-start-column="40" selection-end-line="142" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ng-app/src/app/app.component.html">
+    <entry file="file://$PROJECT_DIR$/ng-app/src/app/menu/menu.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ng-app/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="924">
-          <caret line="44" column="26" lean-forward="false" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
+        <state relative-caret-position="208">
+          <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
           <folding>
-            <element signature="e#0#39#0" expanded="false" />
+            <element signature="e#0#40#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ng-app/src/app/login/login.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-567">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#50#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ng-app/src/app/service/authentication.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="25" column="57" lean-forward="false" selection-start-line="25" selection-start-column="57" selection-end-line="25" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ng-app/src/app/menu/menu.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="95" lean-forward="false" selection-start-line="5" selection-start-column="95" selection-end-line="5" selection-end-column="95" />
+        <state relative-caret-position="168">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ng-app/src/app/user/user-routing.module.ts">
+    <entry file="file://$PROJECT_DIR$/ng-app/src/app/user/user-add/user-add.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="18" column="16" lean-forward="false" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+        <state relative-caret-position="21">
+          <caret line="1" column="39" lean-forward="false" selection-start-line="1" selection-start-column="39" selection-end-line="1" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ng-app/src/app/products/add/products.add.component.ts">
+    <entry file="file://$PROJECT_DIR$/ng-app/node_modules/@angular/core/src/metadata/lifecycle_hooks.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-189">
-          <caret line="27" column="30" lean-forward="true" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+        <state relative-caret-position="213">
+          <caret line="63" column="4" lean-forward="false" selection-start-line="63" selection-start-column="4" selection-end-line="63" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ng-app/src/app/products/add/products.add.component.html">
+    <entry file="file://$PROJECT_DIR$/ng-app/src/app/service/users-data.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-57">
-          <caret line="29" column="36" lean-forward="true" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
+        <state relative-caret-position="147">
+          <caret line="9" column="2" lean-forward="false" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/camt/cbsd/config/CorsFilter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/camt/cbsd/config/json/View.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/camt/cbsd/config/DataLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="102" column="22" lean-forward="false" selection-start-line="102" selection-start-column="20" selection-end-line="102" selection-end-column="22" />
+        <state relative-caret-position="231">
+          <caret line="11" column="19" lean-forward="false" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -1571,212 +1843,145 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ng-app/src/app/user/user-list/user-list.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ng-app/src/app/user/user-list/user-list.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="8" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/camt/cbsd/config/CorsFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="17" column="39" lean-forward="false" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ng-app/src/app/products/add/products.add.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ng-app/src/app/service/users-data-server.service.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ng-app/src/app/service/users-data-server.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ng-app/src/app/service/products-data.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-128">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ng-app/src/app/products/list/products.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="26" lean-forward="false" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ng-app/src/app/products/list/products.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ng-app/src/app/service/products-data-server.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/camt/cbsd/config/WebSecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        <state relative-caret-position="284">
+          <caret line="67" column="79" lean-forward="false" selection-start-line="67" selection-start-column="79" selection-end-line="67" selection-end-column="79" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/camt/cbsd/controller/ProductController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="32" column="13" lean-forward="false" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+        <state relative-caret-position="462">
+          <caret line="89" column="23" lean-forward="true" selection-start-line="89" selection-start-column="23" selection-end-line="89" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/camt/cbsd/dao/AbstractProductDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/camt/cbsd/config/DataLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/camt/cbsd/dao/ProductDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-          <folding />
+        <state relative-caret-position="492">
+          <caret line="88" column="16" lean-forward="false" selection-start-line="88" selection-start-column="16" selection-end-line="88" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/camt/cbsd/dao/ProductDaoDBImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
+        <state relative-caret-position="63">
           <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/camt/cbsd/entity/security/AuthorityName.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/camt/cbsd/services/ProductServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/camt/cbsd/entity/security/Authority.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-265">
-          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/camt/cbsd/security/service/JwtAuthenticationResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="25" lean-forward="true" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/camt/cbsd/security/repository/AuthorityRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/camt/cbsd/security/controller/AuthenticationRestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-831">
-          <caret line="28" column="13" lean-forward="false" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/camt/cbsd/repository/ProductRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="13" column="18" lean-forward="true" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/camt/cbsd/security/JwtAuthenticationEntryPoint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="18" column="25" lean-forward="true" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/camt/cbsd/security/JwtAuthenticationRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="7" column="14" lean-forward="false" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/camt/cbsd/security/JwtAuthenticationTokenFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/camt/cbsd/security/JwtTokenUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/camt/cbsd/security/JwtUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/camt/cbsd/security/JwtUserFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="11" column="19" lean-forward="false" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/camt/cbsd/security/repository/UserRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        <state relative-caret-position="177">
+          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="65" selection-end-column="55" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/camt/cbsd/entity/Product.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="29" column="22" lean-forward="false" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/camt/cbsd/entity/security/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/camt/cbsd/services/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="42" column="9" lean-forward="true" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
+        <state relative-caret-position="237">
+          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="47" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/camt/cbsd/services/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="48" lean-forward="false" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/camt/cbsd/services/ProductService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/camt/cbsd/services/ProductServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="102" column="49" lean-forward="false" selection-start-line="102" selection-start-column="49" selection-end-line="102" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/camt/cbsd/entity/RegisterEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1182#1183#0" expanded="true" />
+            <element signature="e#1226#1227#0" expanded="true" />
           </folding>
         </state>
       </provider>

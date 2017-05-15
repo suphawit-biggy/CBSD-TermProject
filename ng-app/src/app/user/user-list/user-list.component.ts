@@ -21,12 +21,7 @@ export class UserListComponent implements OnInit {
 
   onSearch(){
     this.usersDataService.findUser(this.search)
-      .subscribe(users => this.users = users,
-        (error : Error ) => {
-          if (error.message === 'UnAuthorize'){
-            this.router.navigate(['login'],{queryParams:{source:'user'}});
-          }
-        });
+      .subscribe(users => this.users = users);
   }
 
 }

@@ -21,9 +21,9 @@ export class AuthenticationService {
         if (token) {
           // store username and jwt token in local storage to keep user logged in between page refreshes
           localStorage.setItem('currentUser', JSON.stringify({username: username, token: token}));
-          let student = response.json().student;
-          console.log(student);
-          localStorage.setItem('userDetails', JSON.stringify(student));
+          let product = response.json().product;
+          console.log(product);
+          localStorage.setItem('userDetails', JSON.stringify(product));
           // return true to indicate successful login
           return true;
         } else {
