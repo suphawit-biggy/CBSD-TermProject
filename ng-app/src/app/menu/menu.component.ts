@@ -3,6 +3,7 @@ import {Product} from "../products/product";
 import {ProductsDataService} from "../service/products-data.service";
 import {Router} from "@angular/router";
 import {AuthenticationService} from "../service/authentication.service";
+
 @Component({
  selector: 'menu',
  templateUrl: './menu.component.html',
@@ -16,9 +17,6 @@ export class MenuComponent {
   ngOnInit() {
     this.productDataService.getProductsData()
       .subscribe(products => this.products = products);
-  }
-  showDetail(product: Product){
-    this.router.navigate(['/detail',product.id]);
   }
 
   hasRole(role:string){

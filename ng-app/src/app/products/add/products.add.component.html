@@ -28,7 +28,7 @@
         <button type="button" class="btn btn-primary btn-xs col-md-1 button-amount" (click)="downQuantity(product)">-
         </button>
         <input type="text" class="col-md-1 form-control input-amount" value="1" [(ngModel)]="product.amount"
-               name="penAmount" #amount="ngModel" required>
+               name="amount" #amount="ngModel" required>
         <button type="button" class="btn btn-primary btn-xs col-md-1 button-amount" (click)="upQuantity(product)">+
         </button>
       </div>
@@ -36,7 +36,7 @@
     <div class="form-group" [ngClass]="{'has-error':f.submitted && !price.valid}">
       <label class="col-sm-2 control-label">Price : </label>
       <div class="col-sm-10 form-inline">
-        <input type="number" class="form-control" id="productPrice" placeholder="Price" [(ngModel)]="product.price"
+        <input type="number" class="form-control" id="productPrice" placeholder="Price" min="1" [(ngModel)]="product.price"
                name="price" #price="ngModel" required>
       </div>
     </div>

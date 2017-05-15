@@ -14,5 +14,4 @@ public class RegisterEntity {
     String password;
     String role;
     Product product;
-
 }

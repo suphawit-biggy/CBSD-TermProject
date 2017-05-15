@@ -41,7 +41,7 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Transactional
-    public List<Product> getProducts(){
+    public List<Product> getProducts() {
         List<Product> products = productDao.getProducts();
         return products;
     }
@@ -70,10 +70,10 @@ public class ProductServiceImpl implements ProductService {
     @Override
     public Product addProduct(Product product, String imageFileName, BufferedImage image) throws IOException {
         // save file to the server
-        int newId = productDao.size()+1;
-        String newFilename = newId +"."+ imageFileName;
-        File targetFile = Files.createFile(Paths.get(imageServerDir+newFilename)).toFile();
-        ImageIO.write(image, FilenameUtils.getExtension(imageFileName),targetFile);
+        int newId = productDao.size() + 1;
+        String newFilename = newId + "." + imageFileName;
+        File targetFile = Files.createFile(Paths.get(imageServerDir + newFilename)).toFile();
+        ImageIO.write(image, FilenameUtils.getExtension(imageFileName), targetFile);
 
         product.setImage(newFilename);
         productDao.addProduct(product);
@@ -96,31 +96,11 @@ public class ProductServiceImpl implements ProductService {
     @Transactional
     @Override
     public Product addProduct(RegisterEntity registerEntity) {
-        Authority authority;
-        if (registerEntity.getRole().equals("Admin")){
-            authority = authorityRepository.findByName(AuthorityName.ROLE_ADMIN);
-        }else{
-            authority =
-                    authorityRepository.findByName(AuthorityName.ROLE_USER);
-        }
+        Authority authority = null;
+        if (registerEntity.getRole().equals("Staff"))
+            authority = authorityRepository.findByName(AuthorityName.ROLE_STAFF);
         Product product = registerEntity.getProduct();
-        User user = User.builder().username(registerEntity.getUsername())
-                .password(registerEntity.getPassword())
-                .firstname(product.getName())
-                .lastname("default surname")
-                .email("default @default")
-
-                .lastPasswordResetDate(Date.from(LocalDateTime.now().atZone(ZoneId.systemDefault()).toInstant()))
-                .authorities(Arrays.asList(authority))
-                .enabled(true)
-                .build();
         product = productDao.addProduct(product);
-        user = userRepository.save(user);
-        product.setUser(user);
-        user.setProduct(product);
-
-        Hibernate.initialize(product.getUser());
-        Hibernate.initialize(product.getAuthorities());
         return product;
 
     }

@@ -19,10 +19,14 @@ export class ProductsAddComponent {
   }
 
   upQuantity(product: Product) {
+    if(product.amount == null)
+      product.amount = 0;
     product.amount++;
   }
 
   downQuantity(product: Product) {
+    if(product.amount == null)
+      product.amount = 0;
     if (product.amount > 0)
       product.amount--;
   }
