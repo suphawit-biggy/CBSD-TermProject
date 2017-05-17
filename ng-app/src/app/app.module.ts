@@ -24,6 +24,7 @@ import {UsersDataServerService} from './service/users-data-server.service';
 import {UserListComponent} from './user/user-list/user-list.component';
 import {UserRoutingModule} from './user/user-routing.module';
 import { EditComponent } from './products/edit/edit.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 
 @NgModule({
@@ -31,13 +32,15 @@ import { EditComponent } from './products/edit/edit.component';
     ProductsComponent,
     ProductsAddComponent,
     ProductsViewComponent,
-    MenuComponent, FileNotFoundComponent,
+    MenuComponent,
+    FileNotFoundComponent,
     LoginComponent,
     PurchaseHistoryComponent,
     CartComponent,
     UserAddComponent,
     UserListComponent,
-    EditComponent
+    EditComponent,
+    CheckoutComponent
   ],
   imports: [BrowserModule, FormsModule, HttpModule,
     UserRoutingModule, ProductRoutingModule, AppRoutingModule, SelectModule],

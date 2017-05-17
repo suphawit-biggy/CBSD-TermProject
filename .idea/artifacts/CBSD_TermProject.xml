@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="CBSD-TermProject">
+    <output-path>$PROJECT_DIR$/out/artifacts/CBSD_TermProject</output-path>
+    <root id="archive" name="CBSD-TermProject.war" />
+  </artifact>
+</component>

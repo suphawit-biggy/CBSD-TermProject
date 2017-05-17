@@ -1,3 +1,10 @@
-<p>
-  cart works!
-</p>
+<div *ngFor="let product of cartArray" class="row">
+  <div class="panel panel-primary col-md-8 col-sm-8">
+    <div class="panel-heading">
+      <h2 class="panel-title">{{product.name}}
+        <button type="button" class="btn btn-danger btn-xs pull-right" (click)="removeFromCart(product.id)">Remove</button>
+      </h2>
+    </div>
+  </div>
+</div>
+<button type="button" class="btn btn-warning" (click)="checkOut()">Check out</button>

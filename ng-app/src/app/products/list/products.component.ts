@@ -46,7 +46,11 @@ export class ProductsComponent {
     }
   }
 
-  hasNotRole(role: string) {
-    return this.authenService.hasNotRole(role);
+  hasRole(role: string) {
+    return this.authenService.hasRole(role);
+  }
+
+  addToCart(product: Product) {
+    this.productDataService.addToCart(product);
   }
 }

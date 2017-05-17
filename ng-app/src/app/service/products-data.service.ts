@@ -25,6 +25,14 @@ export class ProductsDataService {
     return null;
   }
 
+  addToCart(product: Product) {
+    return null;
+  }
+
+  getCartData() {
+    return null;
+  }
+
   removeProoduct(id: number) {
     return null;
   }

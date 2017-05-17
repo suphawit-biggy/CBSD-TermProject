@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 import {Product} from "../products/product";
 import {ProductsDataService} from "../service/products-data.service";
-import {Router} from "@angular/router";
+import {ActivatedRoute, Router} from "@angular/router";
 import {AuthenticationService} from "../service/authentication.service";
 
 @Component({
@@ -11,10 +11,11 @@ import {AuthenticationService} from "../service/authentication.service";
 })
 export class MenuComponent {
   constructor(private productDataService: ProductsDataService, private router: Router,
-              private authenService: AuthenticationService) {
+              private authenticationService: AuthenticationService, private route: ActivatedRoute) {
   }
 
   products: Product[];
+  error = '';
 
   ngOnInit() {
     this.productDataService.getProductsData()
@@ -22,10 +23,25 @@ export class MenuComponent {
   }
 
   hasRole(role: string) {
-    return this.authenService.hasRole(role);
+    return this.authenticationService.hasRole(role);
   }
 
-  hasNotRole(role: string) {
-    return this.authenService.hasNotRole(role);
+  logout() {
+    this.authenticationService.logout();
+    let source: String;
+    this.route.queryParams.subscribe(
+      params => {
+        if (params['source'])
+          source = params['source'];
+        else
+          source = null;
+      }
+    )
+
+    if (source) {
+      this.error = 'Please login before use ' + source + ' page';
+    }
+
+    this.router.navigate(['/list']);
   }
 }

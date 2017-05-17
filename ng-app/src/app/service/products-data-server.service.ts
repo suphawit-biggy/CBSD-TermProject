@@ -1,12 +1,16 @@
 import {Injectable} from '@angular/core';
 import {Product} from '../products/product';
 import {Http, Headers, Response, RequestOptions, URLSearchParams} from '@angular/http';
-import {Observable} from "rxjs/Rx";
 import {AuthenticationService} from './authentication.service';
+import {Observable} from 'rxjs/Observable';
+import {Subscriber} from 'rxjs/Subscriber';
+import {forEach} from '@angular/router/src/utils/collection';
 
 
 @Injectable()
 export class ProductsDataServerService {
+  cartArray: Product[] = [];
+
   constructor(private http: Http, private authenticationService: AuthenticationService) {
   }
 
@@ -89,7 +93,27 @@ export class ProductsDataServerService {
       })
   }
 
+  getCartData() {
+    return new Observable<Product[]>((subscriber: Subscriber<Product[]>) => subscriber.next(this.cartArray));
+  }
+
+  addToCart(product: Product) {
+    let search = false;
+    for (let i = 0; i < this.cartArray.length; i++) {
+      if (product.id == this.cartArray[i].id) {
+        search = true;
+        break;
+      } else
+        search = false;
+    }
+    if (search == true)
+      alert("This product is in cart already");
+    else {
+      this.cartArray.push(product);
+      alert("Add complete!");
+    }
+  }
+
   removeProduct(id: number) {
-    return this.http.delete('http://localhost:8080/product/' + id)
   }
 }

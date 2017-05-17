@@ -25,7 +25,9 @@
         <div class="row">
           <div class="col-sm-offset-1 ">
             <button type="button" class="btn btn-success btn-xs" (click)="showDetail(product)">More</button>
-            <button *ngIf="hasNotRole('STAFF')" type="button" class="btn btn-warning btn-xs">Add to Cart</button>
+            <button *ngIf="!hasRole('STAFF')" type="button" class="btn btn-warning btn-xs" (click)="addToCart(product)">
+              Add to Cart
+            </button>
           </div>
         </div>
       </div>
